@@ -1,0 +1,221 @@
+/* root is used if we want to use a particular thing in the whole page */
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    /* these are css variables */
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms
+}
+body{
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+
+}
+/* css pseudo elements */
+body::-webkit-scrollbar{
+    width: 0.60rem;
+}
+body::-webkit-scrollbar-track{
+    background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb{
+    background: plum;
+}
+
+main{
+    margin-left: 6rem;
+    padding: 2rem;
+
+}
+
+.navbar{
+    width:6rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 300ms ease;
+
+}
+
+.navbar-nav{
+    /* creating a flexbox */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    /* filter: grayscale(100%) opacity(0.7); */
+    transition: var(--transition-speed);
+}
+.nav-link:hover{
+    filter: grayscale(0%)opacity(1);
+    /* background: var(--bg-secondary); */
+    color: #ffb3cc;
+    /* color: black */
+   
+    
+}
+.link-text{
+    display: none;
+    margin-left: none;
+}
+.nav-link svg{
+    min-width: 1.5rem;
+    margin: 0 1.5rem;
+}
+.navbar:hover{
+    width: 16rem;
+
+}
+h2:hover,h3:hover{
+    color: #ffb3cc;
+}
+
+.navbar:hover .link-text{
+    display: block;
+}
+
+logo:last-child{
+    margin-top: auto;
+}
+.fa-secondary{
+    color: violet;
+}
+.fa-primary{
+    color: violet;
+}
+.icon{
+    color: violet;
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    /* background: var(--bg-secondary); */
+    font-size: 1rem;
+    letter-spacing: 0.1ch;
+    width: 100%;
+  }
+  
+  .logo svg {
+    transform: rotate(0deg);
+    transition: var(--transition-speed);
+  }
+  
+  /* .logo-text
+  {
+    display: inline;
+    position: absolute;
+    left: -999px;
+    transition: var(--transition-speed);
+  } */
+  .navbar:hover .logo svg {
+    transform: rotate(-180deg);
+  }
+
+body{
+    /* background-color:   #ffebcc; */
+    /* background-color:  #0d0d0d; */
+    background-image: repeating-linear-gradient(235deg,white, #262626);
+     /* background-image: repeating-linear-gradient(235deg,rgb(133, 133, 133), rgb(168, 168, 168));  */
+    /* background-image: url("woo.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+     color: black
+}
+h2{
+    color: violet;
+}
+
+.text-centre{
+    text-align: center;
+}
+table{
+    width: 62rem;
+}
+th{
+    text-align: left;
+}
+table,th,td{
+    border: 1px solid peachpuff  ;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 1rem;
+}
+tr:nth-child(even){
+    color:violet;
+}
+tr:hover{
+    color: #ffb3cc; 
+}
+#Grades tr:hover{
+    color: bl
+}
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url("newbackground.jpg");
+    background-repeat: no-repeat;
+    background-color: #f67c92;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    color: violet;
+    z-index: 200;
+    padding: 1rem 0;
+    text-align: center;
+    line-height: 100vh;
+}
+.splash.display-none{
+
+    color: violet;
+    position: fixed;
+    opacity: 0;
+    z-index: -10;
+    top: 0;
+    left: 0;  
+    width: 100%;
+    height: 200vm;
+    text-align: center;
+    line-height: 100vh;
+    transition: all 2s;
+}  
+
+
+@keyframes fadeIn{  
+    to{
+        opacity: 1;
+    }
+}
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+#Assignment{
+    padding-top: 10rem;
+}
+#Grades{    
+    padding-top: 25rem;
+}

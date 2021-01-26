@@ -1,0 +1,366 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viweport" content="width-device-width",initial-scale=1>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+</head>
+<!-- front page -->
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="images/newlogo.png" class="logo">
+            <div class="header-text">
+                <h1>Those who know, do. Those that understand, teach. <br>
+                    ― Aristotle</h1>
+                <span class="square"></span>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fugiat, quaerat ducimus odio perspiciatis aperiam esse unde numquam 
+                    natus repellendus provident voluptate impedit totam deserunt consectetur 
+                    ea minima quos at officia!
+                </p>
+                <button class="common-btn">
+                    Read More
+                </button>
+
+                <div class="line">
+                    <span class="line-1"></span>
+                    <br> <br> 
+                    <span class="line-2"></span>
+                    <br> <br> 
+                    <span class="line-3"></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- nav bar -->
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="http://www.gimt-guwahati.ac.in/" target="_blank">About us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="project/index.html" target="_blank">Syllabus</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+    <!-- open and close the menu btn -->
+    <script>
+    var menuBtn = document.getElementById('menuBtn');
+    var sideNav = document.getElementById('sideNav');
+
+    sideNav.style.right = "-250px";
+    // is sidebar is -250px make it 0 px and vice versa
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+        }
+        else{
+            sideNav.style.right = "-250px";
+        }
+    }
+    </script>
+</section>
+
+<!-- courses -->
+<!-- civil -->
+<section id="courses">
+    <div class="container">
+        <!-- <button class="common-btn"> -->
+        <h1 class="heading">Here are the courses</h1>
+        </button>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="course/civil1.png" alt="card background" class="card-img">
+                <!-- <img src="course/civil1.png" alt="civil" class = "profile-img"> -->
+                <h1>Civil Engineering</h1>
+                <p class="about">
+                    To provide trained human resources in the field of Civil Engineering for industry and 
+                    society through excellence in technical education and research.
+                </p>
+                <!-- <a href="#" class="btn">Contact Hod</a> -->
+                <!-- <ul class="social-media">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+    
+<!-- cse -->
+
+    <div class="container">
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="course/cse.jpg" alt="card background" class="card-img">
+                <!-- <img src="course/cse.jpg" alt="cse" class = "profile-img"> -->
+                <h1>Computer Science Engineering</h1>
+                <p class="about">
+                    To develop competent computer science and engineering graduates who will 
+                    contribute productively to local, national as well as global economies. 
+                </p>
+                <!-- <a href="#" class="btn">Contact Hod</a> -->
+                <!-- <ul class="social-media">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+    
+<!-- electrical -->
+    <div class="container">
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="course/electrical.jpeg" alt="card background" class="card-img">
+                <!-- <img src="course/electrical.jpeg" alt="electrical" class = "profile-img"> -->
+                <h1>Electrical Engineering</h1>
+                <p class="about">
+                    Since 2013, Bachelor of Technology degree programme has commenced and is affiliated to 
+                    Assam Science and Technology University (ASTU). has a curriculum with 200 credits that 
+                    include practical/ seminars/ training/ Projects etc. and it covers subjects on basic sciences, 
+                    humanities & Technology. The course structure, syllabi for the branch are basically power 
+                    system oriented and it encompasses theory papers like power system analysis, control, economics, 
+                    protection, computer oriented analysis,
+                     industrial drives and control, high voltage engineering and other electives
+                </p>
+                <!-- <a href="#" class="btn">Contact Hod</a> -->
+                <!-- <ul class="social-media">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+    
+<!-- ece -->
+
+    <div class="container">
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="course/ece.jpeg" alt="card background" class="card-img">
+                <!-- <img src="course/ece.jpeg" alt="ece" class = "profile-img"> -->
+                <h1>Civil Engineering</h1>
+                <p class="about">
+                    To be a centre of excellence in the field of Electronics and Communication Engineering and to produce globally competitive and socially sensitive graduates who can excel in education, research and entrepreneurship and contribute to the ever 
+                    changing industrial requirements, economic growth and societal needs. 
+                </p>
+                <!-- <a href="#" class="btn">Contact Hod</a> -->
+                <!-- <ul class="social-media">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+    
+<!-- mechanical -->
+
+    <div class="container">
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="course/me.jpeg" alt="card background" class="card-img">
+                <!-- <img src="course/me.jpeg" alt="mechanical" class = "profile-img"> -->
+                <h1>Mechanical Engineering</h1>
+                <p class="about">
+                    To produce professionally competent Mechanical Engineering graduates 
+                    who will positively contribute towards the betterment of the global economy and entrepreneurship.
+                </p>
+                <!-- <a href="#" class="btn">Contact Hod</a> -->
+                <!-- <ul class="social-media">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- staff -->
+
+
+<section id="Staff">
+    <!-- <div class="container"> -->
+        <!-- <button class="common-btn"> -->
+        <h1 class="heading">Meet the staff</h1>
+        </button>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="course/back2.jpg" alt="card background" class="card-img">
+                <img src="course/hod1.jpeg" alt="civil" class = "profile-img">
+                <h1>Name</h1>
+                <p class="job-title">HOD Civil</p>
+                <p class="about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Quia alias saepe reiciendis dolore laudantium voluptate ex possimus. 
+                    Expedita, nulla, corrupti libero magnam est vero deserunt neque odit inventore alias et?
+                </p>
+                <a href="#" class="btn">Contact Hod</a>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                   
+                </ul>
+            </div>
+        <!-- </div> -->
+    </div>
+    
+<!-- cse -->
+
+    <!-- <div class="container"> -->
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="course/back2.jpg" alt="card background" class="card-img">
+                <img src="course/hod2.jpeg" alt="cse" class = "profile-img">
+                <h1>Name</h1>
+                <p class="job-title">HOD CSE</p>
+                <p class="about">
+                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                   Dolorum odit totam omnis facilis quo voluptas mollitia beatae possimus quisquam 
+                   doloremque perspiciatis quia libero, expedita cum voluptatibus quos maiores numquam repudiandae! 
+                </p>
+                <a href="#" class="btn">Contact Hod</a>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    <!-- </div> -->
+    
+<!-- electrical -->
+    <!-- <div class="container"> -->
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="course/back2.jpg" alt="card background" class="card-img">
+                <img src="course/hod3.jpeg" alt="electrical" class = "profile-img">
+                <h1>Name</h1>
+                <p class="job-title">HOD Electrical</p>
+                <p class="about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officia, 
+                    architecto cum deserunt labore officiis esse pariatur inventore atque 
+                    maxime doloremque amet dicta, eum perspiciatis nam obcaecati recusandae, incidunt libero!
+                </p>
+                <a href="#" class="btn">Contact Hod</a>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    <!-- </div> -->
+    
+<!-- ece -->
+
+    <!-- <div class="container"> -->
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="course/back2.jpg" alt="card background" class="card-img">
+                <img src="course/hod4.jpeg" alt="ece" class = "profile-img">
+                <h1>Name</h1>
+                <p class="job-title">HOD Ece</p>
+                <p class="about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aliquid 
+                    adipisci dicta qui dolores numquam laudantium repudiandae praesentium, 
+                    enim iste iusto saepe, quam ratione dolorum similique a ullam quae? Aliquam?
+                </p>
+                <a href="#" class="btn">Contact Hod</a>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    <!-- </div> -->
+    
+<!-- mechanical -->
+
+    <div class="container">
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="course/back2.jpg" alt="card background" class="card-img">
+                <img src="course/hod5.jpeg" alt="mechanical" class = "profile-img">
+                <h1>Name</h1>
+                <p class="job-title">HOD Civil</p>
+                <p class="about">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, officiis!
+                     Dicta iste temporibus eligendi assumenda quod, fuga voluptatum nesciunt 
+                    blanditiis rerum adipisci similique libero accusamus nemo dignissimos cupiditate ex iusto.
+                </p>
+                <a href="#" class="btn">Contact Hod</a>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="footer">
+    <div class="container footer-row">
+        <hr>
+        <div class="footer-left-col">
+            <div class="footer-links">
+                <div class="link-title">
+                    <h4>Placements</h4>
+                    <br>
+                    <p>Announcements</p>
+                    <br>
+                    <p>Addmission</p>
+                </div>
+                <div class="link-title">
+                    <h4>About us</h4>
+                    <br>
+                    <p>FAQ</p>
+                    <br>
+                    <p>Contact Us</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right-col">
+            <div class="footer-info">
+                <div class="copyright-text">
+                    <p>support@gimt.com</p> 
+                    <p>copyright 2020 GIMT</p>
+                </div>
+                <div class="footer-logo">
+                    <img src="images/newlogo.png" alt="" class="logo">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- social icons -->
+<div class="social-icons">
+    <img src="images/facebook.png">
+    <img src="images/instagram.png">
+    <img src="images/twitter.png">
+    <img src="images/linkedin.png">
+</div>
+</body>
+</html>
